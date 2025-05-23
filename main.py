@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 st.title('서울 자전거 렌탈수와 기상데이터 상관관계 분석')
 
 # 데이터 불러오기
-bike_df = pd.read_csv('csv/tempby.csv')
+bike_df = pd.read_csv('csv/seoul_bike_rentals_2024.csv')
 weather_df = pd.read_csv('csv/2024_기상데이터.csv')
 weather_selected = weather_df.iloc[:, 3:10]
 
