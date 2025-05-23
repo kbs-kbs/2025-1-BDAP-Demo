@@ -16,6 +16,9 @@ numeric_df = merged.select_dtypes(include="number")
 # 상관관계 분석
 corr = numeric_df.corr()
 
+plt.rcParams['font.family'] ='Malgun Gothic'
+plt.rcParams['axes.unicode_minus'] =False
+
 # 히트맵 시각화
 st.subheader('상관관계 히트맵')
 plt.figure(figsize=(10, 8))
